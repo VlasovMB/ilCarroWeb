@@ -30,6 +30,11 @@
             "styles": [
               "src/styles.scss"
             ],
+            "allowedCommonJsDependencies": [
+              "rxjs/operators",
+              "rxjs/Subject",
+              "rxjs/Subscription"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -123,6 +128,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "IlCarroWeb"
+    }
+  },
+  "defaultProject": "IlCarroWeb",
+  "cli": {
+    "analytics": "757c07a0-6e43-47d2-8bd1-1375e161fc4c"
+  }
 }

@@ -1,0 +1,28 @@
+// We need to use ::ng-deep to overcome view encapsulation
+::ng-deep {
+  .custom-slider .ng5-slider .ng5-slider-bar {
+    height: 1.5px;
+    color: var(--bs-dark);
+  }
+
+  .custom-slider .ng5-slider .ng5-slider-selection {
+    background: var(--bs-dark);
+  }
+
+  .custom-slider .ng5-slider .ng5-slider-pointer {
+    width: 0px;
+    height: 16px;
+    top: auto;
+    bottom: 0;
+    background-color: transparent;
+    border: 15px solid transparent;
+    border-bottom: 25px solid var(--bs-dark);
+    border-radius: 0;
+    transform: scale(0.5) translate(0, 50%);
+    transform-origin: left bottom;
+  }
+
+  .custom-slider .ng5-slider .ng5-slider-pointer:after {
+    display: none;
+  }
+}

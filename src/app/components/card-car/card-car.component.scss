@@ -1,0 +1,51 @@
+.card-car-mini {
+  border: transparent;
+  max-width: 30rem;
+  margin: 10px;
+  @media (min-width: 1200px) {
+    max-width: 23rem;
+  }
+
+  img {
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+.card-car-mini-price {
+  justify-content: center;
+  align-items: center;
+  border-radius: 0;
+  font-weight: 500;
+  font-size: 2rem;
+  height: 3rem;
+  box-shadow: 0 3px 6px #0000005F;
+  opacity: 1;
+  top: -1rem;
+}
+
+.card-car-body-car-mini {
+  max-height: 3rem;
+  padding: 0;
+}
+
+.card-title-car-mini {
+  flex-basis: 50%;
+}
+
+.flex-basic10 {
+  flex-basis: 10%;
+}
+
+.flex-basic20 {
+  flex-basis: 20%;
+}
+
+.flex-basic30 {
+  flex-basis: 30%;
+}
+
+.per-day {
+  transform: rotate(-90deg);
+  font-size: 0.5rem;
+}

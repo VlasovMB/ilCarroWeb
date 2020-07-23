@@ -1,0 +1,104 @@
+<div class="card-group">
+
+
+  <div class="card card-car-find m-3">
+    <div class="card-header card-header-find-car">
+      <div class="btn-group btn-group-find-car">
+        <button type="button" class="btn btn-find-car btn-danger btn-wide btn-skew">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-search svg-btn-header-find-car"
+               fill="currentColor"
+               xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+                  d="M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z"/>
+            <path fill-rule="evenodd"
+                  d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
+          </svg>
+        </button>
+        <button type="button" class="btn btn-sm btn-find-car btn-dark btn-narrow btn-skew">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-sliders svg-btn-header-find-car"
+               fill="currentColor"
+               xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+                  d="M14 3.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zM11.5 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM7 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zM4.5 10a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm9.5 3.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0zM11.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+            <path fill-rule="evenodd"
+                  d="M9.5 4H0V3h9.5v1zM16 4h-2.5V3H16v1zM9.5 14H0v-1h9.5v1zm6.5 0h-2.5v-1H16v1zM6.5 9H16V8H6.5v1zM0 9h2.5V8H0v1z"/>
+          </svg>
+        </button>
+        <button type="button" class="btn btn-sm btn-find-car btn-secondary btn-narrow btn-skew">
+          <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt svg-btn-header-find-car"
+               fill="currentColor"
+               xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+                  d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+    <div class="card-body card-body-shadow">
+      <div class="d-flex justify-content-end">
+        <div class="container container-find-car">
+          <h5 class="card-title card-title-text card-title-text-find-card">
+            Find your car now!
+          </h5>
+          <div class="input-group input-group-sm mb-3">
+            <input type="text" class="form-control" placeholder="Location" aria-label="Location"
+                   aria-describedby="basic-addon2">
+          </div>
+
+          <div class="input-group input-group-sm mb-3">
+            <input type="text" class="form-control" placeholder="From" aria-label="From"
+                   aria-describedby="basic-addon2">
+          </div>
+
+          <div class="input-group input-group-sm mb-5">
+            <input type="text" class="form-control" placeholder="Till" aria-label="Till"
+                   aria-describedby="basic-addon2">
+          </div>
+          <p class="card-title-text card-title-text-sort-car"> Sort by:</p>
+          <div class="container mb-5 overflow-hidden">
+            <div class="d-flex justify-content-center margin-r-l  ">
+              <button type="button" class="btn btn-sm btn-wide btn-secondary btn-skew-sort ">
+                <div class="btn-skew-sort-text d-flex justify-content-end mr-2 ml-2">Price (low to high)</div>
+              </button>
+              <button type="button" class="btn btn-sm btn-wide btn-light btn-skew-sort">
+                <div class="btn-skew-sort-text d-flex justify-content-start mr-2 ml-2">Price (High to low)</div>
+              </button>
+            </div>
+          </div>
+          <div>
+            <div class="d-flex justify-content-center">
+              <div
+                class="card-title-text card-title-text-price text-black-50 d-flex justify-content-start align-items-center">
+                Price range ($/per day):
+              </div>
+              <div
+                class="card-title-text card-title-text-price-num text-body d-flex justify-content-end align-items-center">
+                {{sharedService.doubleRangeSliderMinValue + "-" + sharedService.doubleRangeSliderMaxValue}}</div>
+
+            </div>
+          </div>
+
+          <app-double-range-slider></app-double-range-slider>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card card-cars m-3 card-deck">
+    <app-card-car></app-card-car>
+    <app-card-car></app-card-car>
+    <app-card-car></app-card-car>
+    <app-card-car></app-card-car>
+    <app-card-car></app-card-car>
+    <app-card-car></app-card-car>
+    <app-card-car></app-card-car>
+    <app-card-car></app-card-car>
+    <app-card-car></app-card-car>
+  </div>
+
+</div>
+
+
+

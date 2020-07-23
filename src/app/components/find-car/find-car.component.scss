@@ -1,0 +1,172 @@
+.card-body-shadow {
+  box-shadow: 0 3px 6px #0000005F;
+  opacity: 1;
+}
+
+.svg-btn-header-find-car {
+  transform: skew(-40deg);
+}
+
+.btn-skew {
+  border-radius: 0;
+  transform: skew(40deg);
+}
+
+.btn-skew-sort {
+  flex-basis: 100%;
+  border-radius: 0;
+  transform: skew(40deg);
+}
+
+.btn-skew-sort-text {
+  transform: skew(-40deg);
+  font-size: 0.7rem;
+}
+
+.btn-find-car:focus {
+  box-shadow: none;
+}
+
+.btn-group-find-car {
+  align-items: flex-end;
+  width: 80%;
+  left: -10%;
+}
+
+.btn-group > .btn-wide {
+  padding-right: 2rem;
+  text-align: end;
+  flex-basis: 70%;
+  z-index: 2;
+}
+
+.btn-group > .btn-narrow {
+  flex-basis: 20%;
+  margin-right: 3px;
+  margin-bottom: 2px;
+
+  :hover :active :hover {
+    z-index: 1;
+  }
+}
+
+.card-header-find-car {
+  border-bottom: 0.4rem solid var(--bs-red);
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+
+.container-find-car {
+  width: 70%;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+
+}
+
+.card-title-text-find-card {
+  font-weight: 800;
+  color: var(--bs-red);
+}
+
+.card-title-text-sort-car {
+  font-size: smaller;
+  color: var(--bs-gray);
+}
+
+.card-title-text-price {
+  flex-basis: 60%;
+  font-size: smaller;
+}
+
+.card-title-text-price-num {
+  flex-basis: 40%;
+}
+
+.card-car-find {
+  border: transparent;
+  flex-basis: 25%;
+}
+
+.card-cars {
+  top: 1.7rem;
+  border: transparent;
+  height: auto;
+  overflow: scroll;
+  flex-basis: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media (min-width: 1200px) {
+    flex-basis: 50%;
+    height: 100vh
+  }
+  @media (min-width: 992px) {
+    height: 100vh
+  }
+}
+
+.slider {
+  position: absolute;
+  max-width: 100%;
+}
+
+.slider input {
+  pointer-events: none;
+  position: absolute;
+  overflow: hidden;
+  left: 25%;
+  top: 15px;
+  outline: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  pointer-events: all;
+  position: relative;
+  z-index: 1;
+  outline: 0;
+}
+
+.slider::-moz-range-thumb {
+  cursor: pointer;
+  pointer-events: all;
+  position: relative;
+  z-index: 10;
+  -moz-appearance: none;
+}
+
+.slider input::-moz-range-track {
+  position: relative;
+  z-index: -1;
+  border: 0;
+}
+
+.slider input:last-of-type::-moz-range-track {
+  -moz-appearance: none;
+  background: none transparent;
+  border: 0;
+
+}
+
+.slider input[type=range]::-moz-focus-outer {
+  border: 0;
+}
+
+.margin-r-l {
+  margin-right: -40px;
+  margin-left: -40px;
+}
+
+
+
